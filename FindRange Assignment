@@ -1,0 +1,26 @@
+import acm.program.*;
+
+public class FindRange extends ConsoleProgram {
+
+	public void run() {
+		println("This program will find the range of a specified number group");
+		
+		int x = readInt ("?: ");
+		int max = x;
+		int min = x;
+	while (x !=0) {
+		x = readInt ("?: ");
+		if (x > max) {
+			max = x; 
+		}
+		if (x < min) {
+			min = x;
+		}
+	}
+	
+	
+	println("The largest number is: " + max);
+	println("The smallest number is: " + min);
+
+}
+}
